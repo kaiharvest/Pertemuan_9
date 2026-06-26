@@ -29,7 +29,7 @@ class HelloControllerTest {
                 get("/hello")
         ).andExpectAll(
                 status().isOk(),
-                content().string(Mat.containsString("Hello Guest"))
+                content().string(Matchers.containsString("Hello Guest"))
         );
     }
 
